@@ -8,7 +8,8 @@ const songSchema = new Schema(
         artist: String,
         album: String,
         time: Number,
-        url: String
+        url: String,
+        favorite: {type: boolean, default: false}
     },
     {timestamps: true}
 )
